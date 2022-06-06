@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://203.6.149.151:9090/system/terminal -->
+<html class="index-page" lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html">--><base href=".">
+    <title>Terminal - a.rubin@sandbox</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.css" rel="stylesheet">
+    <link href="https://203.6.149.151:9090/cockpit/static/branding.css" rel="stylesheet">
+    <link href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/nav.css" rel="stylesheet">
+    <script src="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/base1/jquery.js"></script>
+    <script src="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/base1/cockpit.js"></script>
+    <script src="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/manifests.js"></script>
+    <script src="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/*/po.js"></script>
+  </head>
+  <body class="pf-m-redhat-font">
+    <div id="main" class="page">
+        <a class="screenreader-text skiplink desktop_v" href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html#content">Skip to Content</a>
+        <a class="screenreader-text skiplink desktop_v" href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html#nav-hosts-sel">Skip main navigation</a>
+
+        <div class="pf-c-select pf-m-dark sidebar-toggle">
+            <button type="button" class="ct-nav-toggle pf-c-select__toggle pf-m-plain" id="nav-system-item">
+                <span class="fa pficon-container-node" aria-hidden="true"></span>
+                <span>System</span>
+            </button>
+        </div>
+
+        <div id="nav-system" class="area-ct-subnav nav-system-menu sidebar">
+            <nav id="host-apps" class="host-apps"><div class="has-feedback search"><input class="filter-menus form-control" type="search" placeholder="Search" aria-label="Search" value=""><span class="fa fa-search form-control-feedback"></span></div><nav class="pf-c-nav" aria-label="Global" data-ouia-component-type="PF4/Nav" data-ouia-safe="true" data-ouia-component-id="35"><section class="pf-c-nav__section" aria-labelledby="section-title-System"><div class="nav-group-heading"><h2 class="pf-c-nav__section-title" id="section-title-System">System</h2></div><ul class="pf-c-nav__list"><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/system"><a href="https://203.6.149.151:9090/system">Overview</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/system/logs"><a href="https://203.6.149.151:9090/system/logs">Logs</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/storage"><a href="https://203.6.149.151:9090/storage">Storage</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/network"><a href="https://203.6.149.151:9090/network">Networking</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/podman"><a href="https://203.6.149.151:9090/podman">Podman containers</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/users"><a href="https://203.6.149.151:9090/users">Accounts</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/system/services"><a href="https://203.6.149.151:9090/system/services">Services</a></span></li></ul></section><section class="pf-c-nav__section" aria-labelledby="section-title-Tools"><div class="nav-group-heading"><h2 class="pf-c-nav__section-title" id="section-title-Tools">Tools</h2></div><ul class="pf-c-nav__list"><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/apps"><a href="https://203.6.149.151:9090/apps">Applications</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/sosreport"><a href="https://203.6.149.151:9090/sosreport">Diagnostic Reports</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/kdump"><a href="https://203.6.149.151:9090/kdump">Kernel Dump</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/selinux/setroubleshoot"><a href="https://203.6.149.151:9090/selinux/setroubleshoot">SELinux</a></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link" data-for="/updates"><a href="https://203.6.149.151:9090/updates">Software Updates</a><span id="software-updates-info" class="nav-status" aria-describedby="software-updates-info-tooltip"><svg fill="#73bcf7" height="1em" width="1em" viewBox="0 0 512 512" aria-hidden="true" role="img" style="vertical-align: -0.125em;"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" transform=""></path></svg></span></span></li><li class="pf-c-nav__item nav-item"><span class="pf-c-nav__link pf-m-current" data-for="/system/terminal"><a href="https://203.6.149.151:9090/system/terminal">Terminal</a></span></li></ul></section></nav></nav>
+        </div>
+
+        <nav id="nav-hosts-sel" class="navbar navbar-default navbar-pf navbar-pf-vertical" tabindex="-1">
+          <div class="navbar-header">
+            <div id="hosts-sel"><div class="ct-switcher"><div class="pf-c-select pf-m-dark"><button id="pf-toggle-id-58" aria-labelledby="pf-toggle-id-58" aria-expanded="false" aria-haspopup="listbox" type="button" class="ct-nav-toggle pf-c-select__toggle pf-m-plain"><span class="pf-c-select__toggle-wrapper desktop_v"><span class="pf-c-select__toggle-text"><span id="current-username" class="username">a.rubin</span><span class="at">@</span><span class="hostname">sandbox</span></span></span><span class="pf-c-select__toggle-arrow mobile_v fa fa-caret-down" aria-hidden="true"></span><span class="pf-c-select__toggle-wrapper mobile_v">Host</span><span class="pf-c-select__toggle-arrow fa desktop_v fa-caret-down" aria-hidden="true"></span></button></div></div></div>
+          </div>
+        </nav>
+
+        <div id="nav-hosts" class="area-ct-subnav nav-hosts-menu sidebar">
+            <!-- Hosts go here !-->
+        </div>
+
+        <div id="topnav" class="header">
+          <div class="meta ct-header-meta"></div>
+          <div class="ct-header-item ct-header-spinner" id="machine-spinner" style="display: none;">
+              <div class="spinner spinner-md spinner-white"></div>
+          </div>
+          <div id="super-user-indicator" class="super-user-indicator ct-header-item ct-header-lock desktop_v"><button aria-disabled="false" class="pf-c-button pf-m-link" type="button" data-ouia-component-type="PF4/Button" data-ouia-safe="true" data-ouia-component-id="36">Limited access</button></div>
+          <div class="ct-header-item ct-header-oops" id="navbar-oops" hidden="">
+            <a role="link" tabindex="0" class="ct-nav-toggle"><span class="oops-status">Ooops!</span></a>
+          </div>
+          <div id="navbar-docs" class="dropdown ct-header-item ct-header-docs">
+            <a role="link" tabindex="0" id="navbar-docs-dropdown" class="ct-nav-toggle dropdown-toggle" data-toggle="dropdown">
+              <span class="pficon pficon-help"></span>
+              <span>Help</span>
+              <span class="fa fa-caret-down pf-c-dropdown__toggle-icon"></span>
+            </a>
+            <ul id="navbar-docs-items" class="dropdown-menu pull-right"><li><a translate="yes" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_systems_using_the_rhel_8_web_console/index" target="blank" rel="noopener noreferrer">Web Console<i class="fa fa-external-link fa-xs"></i></a></li><li class="divider"></li><li><a data-toggle="modal" data-target="#about">About Web Console</a></li></ul>
+          </div>
+          <div class="dropdown ct-header-item ct-header-menu">
+            <a role="link" tabindex="0" id="navbar-dropdown" class="ct-nav-toggle dropdown-toggle" data-toggle="dropdown">
+              <span class="pficon pficon-user" aria-label="Toggle session settings"></span>
+              <span class="fa fa-caret-down pf-c-dropdown__toggle-icon"></span>
+            </a>
+            <ul class="dropdown-menu pull-right">
+              <li id="super-user-indicator-mobile" class="mobile_v"><button aria-disabled="false" class="pf-c-button pf-m-link" type="button" data-ouia-component-type="PF4/Button" data-ouia-safe="true" data-ouia-component-id="37">Limited access</button></li>
+              <li class="divider mobile_v"></li>
+              <li class="display-language-menu">
+                <a role="link" tabindex="0" data-toggle="modal" data-target="#display-language">Display Language</a>
+              </li>
+              <li class="divider display-language-menu"></li>
+              <li>
+                <a role="link" tabindex="0" id="active-pages" class="navbar-advanced">Active Pages</a>
+              </li>
+              <li>
+                  <a role="link" tabindex="0" data-toggle="modal" data-target="#credentials-dialog" id="credentials-item">SSH Keys</a>
+              </li>
+              <li>
+                <a role="link" tabindex="0" id="go-logout">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal" id="hosts_setup_server_dialog" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="edit-host-dialog" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Host</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div id="host-edit-fail"></div><table class="form-table-ct">
+                                <tbody><tr>
+                                    <td class="top">Host Name</td>
+                                    <td>
+                                        <input class="form-control" id="edit-host-name">
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr id="edit-host-user-row">
+                                    <td class="top">User</td>
+                                    <td>
+                                        <input class="form-control" id="edit-host-user">
+                                    </td>
+                                    <td>
+                                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Leave blank to connect to this machine as the currently logged in user. If you enter a different username, that user will always be used when connecting to this machine.">
+                                            <span class="fa fa-lg fa-info-circle"></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td id="edit-host-colorpicker"></td>
+                                    <td></td>
+                                </tr>
+                                
+                            </tbody></table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="pf-c-button pf-m-primary" id="edit-host-apply">Set</button>
+                        <button class="pf-c-button pf-m-link" data-dismiss="modal">Cancel</button>
+                        <div class="pull-right"><a role="link" tabindex="0" id="edit-host-sync-users">Synchronize users</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="about" tabindex="-1" role="dialog" data-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">About Web Console</h4>
+              </div>
+              <div class="modal-body">
+                <div>Cockpit is an interactive Linux server admin interface.</div>
+                <div><a rel="noopener noreferrer" target="_blank" href="https://cockpit-project.org/">Project website</a></div>
+                <div>
+                  <span>Version</span> <span id="about-version">224.2</span>.
+                </div>
+                <div><span>Licensed under:</span>
+                    <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html" rel="noopener noreferrer" target="_blank">GNU LGPL version 2.1</a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="pf-c-button pf-m-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="troubleshoot-dialog" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="display-language" tabindex="-1" role="dialog" data-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Display Language</h4>
+              </div>
+              <div class="modal-body">
+                <p>Choose the language to be used in the application</p>
+                <select id="display-language-list" size="5" data-role="none">
+                <option value="ca-es">català</option><option value="cs-cz">čeština</option><option value="de-de">Deutsch</option><option value="en-us" selected="selected">English</option><option value="es-es">español</option><option value="fr-fr">français</option><option value="he-il">עברית</option><option value="it-it">italiano</option><option value="ja-jp">日本語</option><option value="ko-kr">한국어</option><option value="nl-nl">Nederlands</option><option value="pl-pl">polski</option><option value="pt-br">português (Brasil)</option><option value="ru-ru">русский</option><option value="sv-se">svenska</option><option value="uk-ua">Українська</option><option value="zh-cn">中文（中国）</option><option value="zh-tw">中文（台灣）</option></select>
+              </div>
+              <div class="modal-footer">
+                <button class="pf-c-button pf-m-primary" id="display-language-select-button">Select</button>
+                <button class="pf-c-button pf-m-link" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="session-timeout-dialog" tabindex="-1" role="dialog" data-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Session is about to expire</h4>
+              </div>
+              <div class="modal-body">
+                  <p id="timeout-message">
+              </p></div>
+              <div class="modal-footer">
+                <button class="pf-c-button pf-m-primary" id="keep-session-alive">Continue Session</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="error-popup" tabindex="-1" role="dialog" data-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="error-popup-title"></h4>
+              </div>
+              <div class="modal-body">
+                <p id="error-popup-message"></p>
+              </div>
+              <div class="modal-footer">
+                <button class="pf-c-button pf-m-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="credentials-dialog" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">SSH Keys</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="listing-ct">
+                            <tbody>
+                                <tr id="credential-keys">
+                                    <td colspan="2">Use the following keys to authenticate against other systems</td>
+                                    <td class="listing-ct-actions">
+                                        <a role="link" tabindex="0">
+                                            <i class="pficon pficon-add-circle-o"></i>
+                                            <span>Add key</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="load-custom-key hidden">
+                                    <td colspan="3">
+                                        <div role="group">
+                                            <div id="ssh-file-container"></div>
+                                            <button class="pf-c-button pf-m-secondary" id="ssh-file-add">Add</button>
+                                        </div>
+                                        <div class="dialog-error help-block"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-scrollable">
+                            <table class="listing-ct credential-listing">
+                                <tbody class="ssh-add-key-body open">
+                                    <tr class="listing-ct-item listing-ct-head">
+                                        <th class="credential-label"></th>
+                                        <td></td>
+                                        <td class="listing-ct-actions"></td>
+                                    </tr>
+                                    <tr class="listing-ct-body">
+                                        <td colspan="3">
+                                            <div class="pf-c-alert pf-m-danger pf-m-inline dialog-error" aria-label="inline danger alert">
+                                              <div class="pf-c-alert__icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                              </div>
+                                              <h4 class="pf-c-alert__title credential-alert"></h4>
+                                            </div>
+                                            <div class="credential-unlock">
+                                                <dl>
+                                                    <dt>
+                                                        <label for="add-key-password">Password</label>
+                                                    </dt>
+                                                    <dd>
+                                                        <input class="form-control credential-password" autocomplete="new-password" id="add-key-password" value="" type="password">
+                                                    </dd>
+                                                    <dt></dt>
+                                                    <dd>
+                                                        <button class="pf-c-button pf-m-primary">Unlock Key</button>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="ssh-key-body" hidden="">
+                                    <tr class="listing-ct-item listing-ct-head">
+                                        <th class="credential-label"></th>
+                                        <td></td>
+                                        <td class="listing-ct-actions"></td>
+                                    </tr>
+                                    <tr class="listing-ct-panel credential-panel">
+                                        <td colspan="3">
+                                            <ul class="nav nav-tabs nav-tabs-pf">
+                                                <li class="active"><a href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html#">Details</a></li>
+                                                <li><a href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html#">Public Key</a></li>
+                                                <li><a href="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.html#">Password</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="listing-ct-body">
+                                        <td colspan="3">
+                                            <div class="pf-c-alert pf-m-danger pf-m-inline dialog-error" aria-label="inline danger alert">
+                                              <div class="pf-c-alert__icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                              </div>
+                                              <h4 class="pf-c-alert__title credential-alert"></h4>
+                                            </div>
+                                            <div class="credential-unlock">
+                                                <dl>
+                                                    <dt>
+                                                        <label for="ssh-key-password">Password</label>
+                                                    </dt>
+                                                    <dd>
+                                                        <input class="form-control credential-password" autocomplete="new-password" id="ssh-key-password" value="" type="password">
+                                                    </dd>
+                                                    <dt></dt>
+                                                    <dd>
+                                                        <button class="pf-c-button pf-m-primary">Unlock Key</button>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="credential-tab credential-panel">
+                                                <dl>
+                                                    <dt>
+                                                        <label>Comment</label>
+                                                    </dt>
+                                                    <dd class="credential-comment"></dd>
+                                                    <dt>
+                                                        <label>Type</label>
+                                                    </dt>
+                                                    <dd class="credential-type"></dd>
+                                                    <dt>
+                                                        <label>Fingerprint</label>
+                                                    </dt>
+                                                    <dd class="credential-fingerprint"></dd>
+                                                </dl>
+                                            </div>
+                                            <div class="credential-tab credential-panel" hidden="">
+                                                <textarea class="credential-data form-control" rows="4" readonly="">                                                </textarea>
+                                            </div>
+                                            <div class="credential-tab credential-panel" hidden="">
+                                                <dl>
+                                                    <dt>
+                                                        <label for="credential-old-passwd">Old Password</label>
+                                                    </dt>
+                                                    <dd>
+                                                        <input class="form-control credential-old" autocomplete="new-password" id="credential-old-passwd" value="" type="password">
+                                                    </dd>
+                                                    <dt>
+                                                        <label for="credential-new-passwd">New Password</label>
+                                                    </dt>
+                                                    <dd>
+                                                        <input class="form-control credential-new" autocomplete="new-password" id="credential-new-passwd" value="" type="password">
+                                                    </dd>
+                                                    <dt>
+                                                        <label for="new-passwd-confirm">Confirm</label>
+                                                    </dt>
+                                                    <dd>
+                                                        <input class="form-control credential-two" autocomplete="new-password" id="new-passwd-confirm" value="" type="password">
+                                                    </dd>
+                                                    <dt>
+                                                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Tip: Make your key password match your login password to automatically authenticate against other systems.">
+                                                            <span class="fa fa-lg fa-info-circle"></span>
+                                                        </a>
+                                                    </dt>
+                                                    <dd>
+                                                        <button class="credential-change pf-c-button pf-m-primary">Change Password</button>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="pf-c-button pf-m-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" role="main" class="area-ct-content" tabindex="-1">
+          <!-- This is where the iframes appear -->
+          <div class="curtains-ct blank-slate-pf" role="alertdialog" aria-labelledby="machine-error-heading" aria-describedby="machine-error-desc" hidden="">
+            <div class="blank-slate-pf-icon">
+              <div class="spinner spinner-lg" hidden=""></div>
+              <i class="fa fa-exclamation-circle"></i>
+            </div>
+            <h1 id="machine-error-heading"></h1>
+            <p id="machine-error-desc"></p>
+            <div class="blank-slate-pf-main-action">
+              <button id="machine-reconnect" class="pf-c-button pf-m-primary btn-lg">Reconnect</button>
+              <button id="machine-troubleshoot" class="pf-c-button pf-m-primary btn-lg">Troubleshoot</button>
+            </div>
+          </div>
+        <iframe class="container-frame" name="cockpit1:localhost/system" data-host="localhost" src="./dockerfile_files/index.html" data-loaded="1" style="display: none;" data-ready="1"></iframe><iframe class="container-frame" name="cockpit1:localhost/system/services" data-host="localhost" src="./dockerfile_files/services.html" style="display: none;" data-loaded="1" data-ready="1"></iframe><iframe class="container-frame" name="cockpit1:localhost/updates" data-host="localhost" src="./dockerfile_files/index(1).html" style="display: none;" data-loaded="1" data-ready="1"></iframe><iframe class="container-frame" name="cockpit1:localhost/system/terminal" data-host="localhost" src="./dockerfile_files/terminal.html" data-active="true" style="display: block;" data-ready="1" data-loaded="1"></iframe></div>
+    </div>
+
+    <div id="early-failure" class="blank-slate-pf" role="alertdialog" hidden="">
+      <div class="blank-slate-pf-icon">
+        <i class="fa fa-exclamation-circle"></i>
+      </div>
+      <h1>Connection failed</h1>
+      <p>
+        <span>There was an unexpected error while connecting to the machine.</span><br>
+        <span>Messages related to the failure might be found in the journal:</span><br>
+        <code>journalctl -u cockpit</code>
+      </p>
+      <p id="safari-cert-help" hidden="">
+        <span>Safari users need to import and trust the certificate of the self-signing CA:</span><br>
+        <a download="">ca.cer</a>
+      </p>
+    </div>
+
+    <script src="https://203.6.149.151:9090/cockpit/$81d4ae26eec8b432e06012d3b84d1c3c203a028606be0585545608aae97e1c8e/shell/index.js"></script>
+  
+
+</body></html>
